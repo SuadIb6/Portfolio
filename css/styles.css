@@ -9,7 +9,30 @@ body {
   max-width: 1140px;
 }
 
-h1,
+@media (max-width: 576px) {
+  h1.text-center {
+    font-size: 48px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 576px) {
+  h2.text-center {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 576px) {
+  h3.text-center {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
+@media (max-width: 576px) {
+  div.about-paragraphs.text-center {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
 h2,
 h3 {
   text-align: center;
@@ -59,6 +82,13 @@ p {
 .primary-link:hover {
   color: #231bbd;
 }
+@media (max-width: 576px) {
+  .project-link {
+    display: block;
+    text-align: center;
+    margin: 0 20px;
+  }
+}
 
 .secondary-link {
   color: var(--primary-color);
@@ -77,6 +107,10 @@ p {
 .about-p {
   background-color: #ffff;
 }
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
 
 .email-link {
   display: flex;
@@ -85,7 +119,12 @@ p {
   font-size: 28px;
   text-decoration: none;
 }
-
+@media (max-width: 576px) {
+  .email-link {
+    font-size: 24px;
+    line-height: 1.5;
+  }
+}
 .email-link:hover {
   text-decoration: underline;
 }
